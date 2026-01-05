@@ -9,6 +9,8 @@ git clone https://github.com/AndreaPuffo/IS-sat.git
 cd IS-sat
 ```
 
+For the presented paper, we used `Python 3.11.11`, `jax 0.4` and `mosek 10.2.` ; the following steps ensure that you install the same setup for future reproducibility.  
+
   
 ### 1.1) Approach 1: install the requirements at system level (not recommended)
 If Python3.11 is available on your machine, you can install the required packages at system level with:
