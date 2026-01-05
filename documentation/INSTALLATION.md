@@ -5,20 +5,20 @@ Three methods are hereby provided to install the following main dependencies.
     
 First, clone the repository:
 ```
-git clone https://github.com/AndreaPuffo/uncertain_cegis.git
-cd uncertain_cegis
+git clone https://github.com/AndreaPuffo/IS-sat.git
+cd IS-sat
 ```
 
   
 ### 1.1) Approach 1: install the requirements at system level (not recommended)
 If Python3.11 is available on your machine, you can install the required packages at system level with:
 ```  
-pip3 install -r ./requirements.txt  
+pip3 install -r ./documentation/requirements.txt  
 ```
 
 For completing Mosek installation, refer to: https://docs.mosek.com/latest/install/installation.html
    
-After having activated a valid Mosek license, copy the license file `mosek.lic` (do not rename the file) inside the code folder as: `uncertain_cegis/src/mosek_license/mosek.lic`.  
+After having activated a valid Mosek license, copy the license file `mosek.lic` (do not rename the file) inside the code folder as: `IS-sat/src/mosek_license/mosek.lic`.  
   
 Installation of `jax`: the following instructions are tested on a system relying on CPU only. If you have a GPU, `jax` might require an alternative version. TODO: test on a GPU.      
    
@@ -34,7 +34,7 @@ conda activate env_is_sat
 ```
   
 Next, you need to activate a Mosek license (refer to: https://docs.mosek.com/latest/install/installation.html).  
-After having activated a valid license, copy the license file `mosek.lic` (do not rename the file) inside the code folder as: `uncertain_cegis/src/mosek_license/mosek.lic`.       
+After having activated a valid license, copy the license file `mosek.lic` (do not rename the file) inside the code folder as: `IS-sat/src/mosek_license/mosek.lic`.       
   
 (use `conda deactivate` upon completion.)
 
@@ -54,7 +54,7 @@ pip3 install -r documentation/requirements.txt
 ```
     
 Next, you need to activate a Mosek license (refer to: https://docs.mosek.com/latest/install/installation.html).  
-After having activated a valid license, copy the license file `mosek.lic` (do not rename the file) inside the code folder as: `uncertain_cegis/src/mosek_license/mosek.lic`.  
+After having activated a valid license, copy the license file `mosek.lic` (do not rename the file) inside the code folder as: `IS-sat/src/mosek_license/mosek.lic`.  
    
 (use `deactivate` upon completion.)
 
@@ -64,7 +64,7 @@ Move to step 2).
 ### 2) Test IS-sat successful installation
 These commands will run the training for the *nonlinear AUV* system:
 ```
-cd uncertain_cegis/src
+cd IS-sat/src
 python3 main_train_is_sat.py  
 ```
     
